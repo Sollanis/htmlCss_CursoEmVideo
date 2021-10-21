@@ -23,27 +23,64 @@
     <p>Nesta frase temos um <i>termo em ITÁLICO</i> usando a tag I (não semântica)</p>
     <p>Nesta frase, temos um <em>termo em ÊNFASE</em> usando a tag EM (semântica)</p>
     
-    <h2>Marca Texto(mark)</h2>
+    <h2>Marca Texto (mark)</h2>
     <p>Com a tag MARK conseguimos <mark>marcar um texto</mark></p>
     <p>Para mudar a cor dar marcação, usa-se o parâmetro de CSS <mark>"style"</mark> dentro da tag MARK. Onde consegue alterar a cor apenas daquela tag.</p>
         <img src="exemplo-stilo-dentro-do-mark.jpg" alt="exemplo-stilo-dentro-do-mark">
     <p>Outra forma de mudar a cor da marcação é criar um <u>seletor</u> para a tag MARK.O seletor normalmente é usado no head e serve para padronizar estilos e formas de outras tags.</p>
         <img src="exemplo-seletor.jpg" alt="exemplo-seletor">
     
-    <h2>Texto maior (big) e menor(small)</h2>
+    <h2>Texto maior (big) e menor (small)</h2>
     <p>Estamos criando um texto <big>maior</big> e um texto <small>menor</small> neste  parágrafo.</p>
 
-    <h2>Texto deletado(del)</h2>
+    <h2>Texto deletado (del)</h2>
     <p>Existia a tag STRIKE (não semântica, que foi descontinuada). Hoje temos o DEL, onde significa que o <del>texto está ali, pode até ser lido, mas deve ser desconsiderado.</del></p>
 
     <h2>Texto inserido (ins)</h2>
     <p>Existia a tag U (não semântica, que foi descontinuada). Hoje temos o INS, onde significa que estamos dizendo <ins>que o texto está ali, deve ser lido e você deve prestar atenção nele</ins></p>
 
-    <h2>Texto sobrescrito e subscrito</h2>
+    <h2>Texto sobrescrito (sup) e subscrito (sub)</h2>
     <p>Sobrescrito para inserir coisas do tipo: x<sup>20</sup>+3 (xis elevado a 20 mais 3)
         <br>
         Subscrito para iserir coisas do tipo: H<sub>2</sub>O 
     </p>
 
+    <hr>
+    
+    <h1>Outras Formatações</h1>
+
+    <h2>Código-Fonte (code) / Pré-Formatação (pre)</h2>
+    <p>O comando CODE serve para deixar as letas como monospaced, ou seja, mono espaçadas, melhorando a leitura de um código-fonte. <br> Exemplo: O
+        <code>document.getElementById('teste')</code> é descrito na linguagem JavaScript
+    </p>
+    <p>Para identação, usamos o o comando PRE antes do comando CODE. Exemplo: 
+        <pre>
+            <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0;
+        print(f 'o número {num} é PAR')
+    else: 
+        print(f 'o número {num} é ÍMPAR')
+    print('Fim do programa')
+            </code>
+        </pre>
+    </p>
+
+    <h2>Citação simples(q) / citação completa (blockquote)</h2>
+    <p>Para Citação simples temos:
+        <br>Como diria o pai de um grande amigo meu: <q>o computador é um burro muito rápido.</q>
+    </p>
+    <p>Para Citação completa, em bloco temos: <br>
+        <blockquote cite="http://developer.mozilla.org">
+            Esta é uma citação tirada da
+            Mozilla Developer Center.
+        </blockquote>
+    </p>
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="Hypertext Markup Language">HTLM</abbr> e <abbr title="Cascading Style Sheet">CSS</abbr>. Estou adorando!</p>
+
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
 </body>
 </html>
