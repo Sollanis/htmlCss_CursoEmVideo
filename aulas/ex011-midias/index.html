@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+
+    <p>Com a tag &lt picture &gt é permitido inserção de imagens, mas com várias <ins>sources (origens ou fontes)</ins>
+    <br>
+    Dentro de PICTURE temos a tag &lt source &gt, onde 
+    </p>
+    
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem-flexivel">
+    </picture>
+    
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a usar reproduzir áudios em HTML5, usando a tag AUDIO</p>
+    
+    <audio src="midia/happy-mistake.mp3" controls autoplay></audio>
+    
+    <p>outra forma</p>
+    <audio preload="metadata" controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <p>Seu navegador nao reproduz o audio.</p>
+    </audio>
+
+    <h1>Vídeos internos</h1>
+    <p>Este vídeo está hospedado localmente, ou seja, no meu próprio servidor.</p>
+
+    <video src="midia/tik-tok-money-liza2.mp4" width="560" controls></video>
+
+    <p>Outra forma para video é: </p>
+
+    <video width="560" poster="imagens/limoes-capa.png" controls>
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.m4v" type="video/mp4">
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.ogv" type="video/ogv">
+        <p>Seu navegador nao reproduz o vídeo. </p>
+    </video>
+
+    <h1>Vídeos Externos</h1>
+
+    <h2>YouTube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2iaPuUFIyMo?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <h2>Vimeo</h2>
+    <iframe src="https://player.vimeo.com/video/346266185?h=e37f8e0e8d&color=ff0179&byline=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+
+</body>
+</html>
