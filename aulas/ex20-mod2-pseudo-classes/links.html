@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /* SELETORES PERSONALIZADOS
+            #  =  id
+            .  =  class
+            :  =  pseudo-class
+            ::  =  pseudo-element
+            >  =  children
+        */
+
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        a{
+            color: rgb(255, 0, 234);
+            text-decoration: none;
+        }
+
+        a:visited{
+            color: rgb(3, 192, 250);
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: blue;
+        }
+
+        a::after{ /*depois de...escreva*/
+            content: ' [link]'; 
+            color: rgb(0, 233, 0);
+        }
+
+        a::before{ /*antes de...escreva*/
+            content: 'Site: ';
+            color: rgb(224, 7, 7);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/Avelot">GitHub</a></li>
+        <li><a href="https://github.com/Avelot">Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/">Curso em Video</a></li>
+    </ul>
+</body>
+</html>

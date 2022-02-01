@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            background-color: rgb(194, 200, 206);
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav{
+            background-color: white;
+        }
+        nav > h1{
+            font-weight: 600;
+            margin-top: 3px;
+        }
+
+        a{
+            color: blue;
+            text-decoration: none;
+            padding-left: 5px;
+        }
+
+        a:hover{
+            color: coral;
+            text-decoration: underline;
+        }
+
+        a:visited{
+            color: cornflowerblue;
+        }
+
+        main{
+            background-color: white;
+            margin: 3px auto;
+        }
+        h2{
+            margin: 3px;
+        }
+
+        footer{
+            background-color: rgb(39, 39, 39);
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Primeiro Site</h1>
+        <p>Este é meu primeiro site criado a partir das aulas do Curso em Vídeo</p>
+    </header>
+
+    <nav>
+        <h1>MENU</h1>
+        <a href="#">link</a>
+        <a href="">link</a>
+        <a href="">link</a>
+        <a href="">link</a>
+    </nav>
+    <main>
+        <section>
+            <article>
+                <h2>Notícias Sobre o Brasil</h2>
+                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto et ab odit excepturi pariatur. Laudantium magnam consectetur deserunt odit eaque mollitia obcaecati totam, similique exercitationem nostrum quod iusto sunt nemo.</p>
+            </article>
+            <article>
+                <h2>Notícias Internacionais</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores repellendus, minima dicta assumenda quod accusantium quo libero fugiat eaque voluptatum modi, corrupti animi perferendis cupiditate iste, repudiandae ipsa. Laudantium, eos!</p>
+                <aside>
+                    Conteúdo periférico do artigo
+                </aside>
+            </article>
+        </section>
+        <aside>
+            Conteúdo perfiférico do site.
+        </aside>
+        <footer>
+            Conteúdo do rodapé.
+        </footer>
+    </main>
+</body>
+</html>
