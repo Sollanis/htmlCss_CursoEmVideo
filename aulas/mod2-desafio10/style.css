@@ -92,6 +92,18 @@ nav > a:hover{
     background-color: var(--cor3);
 }
 
+#navigation{
+    margin-top: 10px;
+    color: white;
+}
+
+div > label{
+    color: rgb(106, 241, 119);
+    padding: 10px;
+    text-decoration: none;
+    transition-duration: .5s; /* fading */
+}
+
 main{
     background-color: white;
     min-width: 300px;/*a partid de...ele se adapta*/
